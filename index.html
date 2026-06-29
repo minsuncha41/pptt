@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kim Ji-young | AI-Powered Frontend Developer</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="page-body">
+    <!-- Navigation -->
+    <nav class="site-nav">
+        <div class="site-container">
+            <div class="nav-bar">
+                <div class="brand-block">
+                    <span class="brand-title">
+                        Portfolio
+                    </span>
+                </div>
+                <div class="main-menu">
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#skills" class="nav-link">Skills</a>
+                    <a href="#projects" class="nav-link">Projects</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </div>
+                <button class="menu-toggle" id="mobileMenuBtn">
+                    <svg class="menu-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="mobile-menu hidden">
+        <div class="mobile-menu-list">
+            <a href="#about" class="mobile-menu-link">About</a>
+            <a href="#skills" class="mobile-menu-link">Skills</a>
+            <a href="#projects" class="mobile-menu-link">Projects</a>
+            <a href="#contact" class="mobile-menu-link">Contact</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section fade-in">
+        <div class="site-container">
+            <div class="hero-stack">
+                <div class="hero-copy">
+                    <h1 class="hero-title">
+                        생성형 AI를 <br>
+                        <span class="hero-highlight">
+                            활용하는
+                        </span>
+                        <br>
+                        프론트엔드 개발자
+                    </h1>
+                    <p class="hero-description">
+                        안녕하세요! <br> 저는 대우능력개발원 생성형AI 프론트엔드 개발자 과정을 수료한 예비 졸업생입니다.
+                        기본기 탄탄한 기술력과 AI를 적극 활용한 창의적인 솔루션으로 팀에 기여하겠습니다.
+                    </p>
+                </div>
+                <div class="hero-actions">
+                    <a href="#projects" class="hero-button primary">
+                        프로젝트 보기
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                        </svg>
+                    </a>
+                    <a href="#contact" class="hero-button secondary">
+                        연락하기
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section-block about-section">
+        <div class="site-container">
+            <div class="section-stack">
+                <div class="fade-in">
+                    <h2 class="section-title">About Me</h2>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="info-grid">
+                    <!-- About Card 1 -->
+                    <div class="fade-in card-hover">
+                        <div class="info-card">
+                            <div class="mb-4">
+                                <svg class="info-icon info-icon-blue" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                        d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <h3 class="info-card-title">대우능력개발원</h3>
+                            <p class="info-card-copy">
+                                생성형 AI 프론트엔드 개발자 과정을 성공적으로 수료했습니다.
+                                실무 중심의 교육으로 최신 기술과 개발 트렌드를 습득했으며,
+                                팀 프로젝트를 통해 협업 능력을 키웠습니다.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- About Card 2 -->
+                    <div class="fade-in card-hover" style="animation-delay: 0.1s">
+                        <div class="info-card">
+                            <div class="mb-4">
+                                <svg class="info-icon info-icon-purple" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd"
+                                        d="M6.267 3.455a3.066 3.066 0 001.745-2.723 3.066 3.066 0 00-3.58 3.03A3.066 3.066 0 006.267 3.455zm9.8 6.817a3.066 3.066 0 001.745-2.723 3.066 3.066 0 00-3.58 3.03 3.066 3.066 0 001.835-.307zm.896 7.776a3.066 3.066 0 001.745-2.723 3.066 3.066 0 00-3.58 3.03 3.066 3.066 0 001.835-.307zm-9.022 0a3.066 3.066 0 001.745-2.723 3.066 3.066 0 00-3.58 3.03 3.066 3.066 0 001.835-.307z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <h3 class="info-card-title">예비 졸업생</h3>
+                            <p class="info-card-copy">
+                                대학교 졸업을 앞두고 있으며,
+                                이제 첫 직무를 시작할 준비가 되어있습니다.
+                                새로운 환경에 빠르게 적응하고, 열정적으로 성장할 준비가 되어있습니다.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Stats -->
+                <div class="stats-grid">
+                    <div class="fade-in stat-item">
+                        <div class="stat-number stat-number-blue">2+</div>
+                        <p class="stat-label">주요 프로젝트 완료</p>
+                    </div>
+                    <div class="fade-in stat-item" style="animation-delay: 0.1s">
+                        <div class="stat-number stat-number-purple">8+</div>
+                        <p class="stat-label">기술 스택 보유</p>
+                    </div>
+                    <div class="fade-in stat-item" style="animation-delay: 0.2s">
+                        <div class="stat-number stat-number-pink">100%</div>
+                        <p class="stat-label">열정으로 준비된 신입</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech Stack Section -->
+    <section id="skills" class="section-block skills-section">
+        <div class="site-container">
+            <div class="section-stack">
+                <div class="fade-in">
+                    <h2 class="section-title">Tech Stack</h2>
+                    <div class="section-line"></div>
+                </div>
+
+                <!-- Tech Badges -->
+                <div class="fade-in">
+                    <div class="badge-list">
+                        <!-- Frontend -->
+                        <div class="tech-badge">
+                            <span class="badge-group-title">Frontend</span>
+                            <div class="badge-row">
+                                <span class="badge">HTML5</span>
+                                <span class="badge">CSS3</span>
+                                <span class="badge">JavaScript</span>
+                                <span class="badge">React</span>
+                                <span class="badge">Tailwind CSS</span>
+                            </div>
+                        </div>
+
+                        <!-- Backend & More -->
+                        <div class="tech-badge">
+                            <span class="badge-group-title">Backend &
+                                Tools</span>
+                            <div class="badge-row">
+                                <span class="badge">Next.js</span>
+                                <span class="badge">Python</span>
+                                <span class="badge">Figma</span>
+                                <span class="badge">Notion</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bento Grid Skills -->
+                <div class="fade-in skill-grid">
+                    <!-- Large Card -->
+                    <div class="lg:col-span-2 lg:row-span-2 card-hover">
+                        <div class="skill-card skill-card-main">
+                            <div>
+                                <h3 class="skill-card-title skill-card-title-blue">Frontend Mastery</h3>
+                                <p class="skill-card-copy skill-card-copy-blue">
+                                    반응형 웹 개발, 성능 최적화, 접근성을 고려한 세련된 UI 구현.
+                                    최신 CSS Grid, Flexbox를 마스터했습니다.
+                                </p>
+                            </div>
+                            <div class="skill-card-icon">🎨</div>
+                        </div>
+                    </div>
+
+                    <!-- Small Cards -->
+                    <div class="card-hover">
+                        <div class="skill-card skill-card-ai">
+                            <div>
+                                <h4 class="skill-card-title skill-card-title-purple">AI 활용</h4>
+                                <p class="skill-card-copy skill-card-copy-purple">ChatGPT와 생성형 AI를 적극 활용한 개발</p>
+                            </div>
+                            <div class="skill-card-icon">🤖</div>
+                        </div>
+                    </div>
+
+                    <div class="card-hover">
+                        <div class="skill-card skill-card-design">
+                            <div>
+                                <h4 class="skill-card-title skill-card-title-pink">Design Thinking</h4>
+                                <p class="skill-card-copy skill-card-copy-pink">Figma를 활용한 UI/UX 디자인 능력</p>
+                            </div>
+                            <div class="skill-card-icon">✨</div>
+                        </div>
+                    </div>
+
+                    <div class="card-hover">
+                        <div class="skill-card skill-card-collab">
+                            <div>
+                                <h4 class="skill-card-title skill-card-title-green">Collaboration</h4>
+                                <p class="skill-card-copy skill-card-copy-green">Notion, Git을 활용한 팀 협업</p>
+                            </div>
+                            <div class="skill-card-icon">🤝</div>
+                        </div>
+                    </div>
+
+                    <div class="card-hover">
+                        <div class="skill-card skill-card-stack">
+                            <div>
+                                <h4 class="skill-card-title skill-card-title-orange">Full Stack Ready</h4>
+                                <p class="skill-card-copy skill-card-copy-orange">Next.js와 Python 학습 진행 중</p>
+                            </div>
+                            <div class="skill-card-icon">🚀</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section-block projects-section">
+        <div class="site-container">
+            <div class="section-stack">
+                <div class="fade-in">
+                    <h2 class="section-title">Featured Projects</h2>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="project-grid">
+                    <!-- Project 1 -->
+                    <div class="fade-in card-hover group">
+                        <div class="project-card">
+                            <div class="project-visual project-visual-blue">
+                                <div class="project-overlay">
+                                    <svg class="project-overlay-svg" fill="currentColor" viewBox="0 0 100 100">
+                                        <circle cx="20" cy="20" r="15" opacity="0.3" />
+                                        <circle cx="80" cy="30" r="20" opacity="0.2" />
+                                        <circle cx="50" cy="70" r="25" opacity="0.25" />
+                                    </svg>
+                                </div>
+                                <div class="project-emoji">💼</div>
+                            </div>
+                            <div class="project-content">
+                                <h3 class="project-title">포트폴리오 웹사이트</h3>
+                                <p class="project-description">
+                                    순수 HTML, Tailwind CSS, Vanilla JavaScript로 제작한 현대적인 포트폴리오입니다.
+                                    Bento Grid 레이아웃, 부드러운 애니메이션, 완벽한 반응형 디자인이 특징입니다.
+                                </p>
+                                <div class="project-tag-list">
+                                    <span class="project-tag project-tag-blue">HTML</span>
+                                    <span class="project-tag project-tag-blue">CSS</span>
+                                    <span class="project-tag project-tag-blue">JavaScript</span>
+                                    <span class="project-tag project-tag-blue">Tailwind</span>
+                                </div>
+                                <a href="https://github.com" target="_blank" class="project-link project-link-blue">
+                                    GitHub에서 보기
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="fade-in card-hover group" style="animation-delay: 0.1s">
+                        <div class="project-card">
+                            <div class="project-visual project-visual-purple">
+                                <div class="project-overlay">
+                                    <svg class="project-overlay-svg" fill="currentColor" viewBox="0 0 100 100">
+                                        <rect x="10" y="10" width="30" height="30" opacity="0.3" />
+                                        <rect x="60" y="20" width="25" height="25" opacity="0.2" />
+                                        <rect x="15" y="60" width="35" height="35" opacity="0.25" />
+                                    </svg>
+                                </div>
+                                <div class="project-emoji">🎨</div>
+                            </div>
+                            <div class="project-content">
+                                <h3 class="project-title">AI 이미지 생성 앱</h3>
+                                <p class="project-description">
+                                    생성형 AI API를 활용한 이미지 생성 웹앱입니다.
+                                    사용자가 텍스트 프롬프트를 입력하면 AI가 이미지를 생성해줍니다.
+                                    React 기반으로 부드러운 UX를 제공합니다.
+                                </p>
+                                <div class="project-tag-list">
+                                    <span class="project-tag project-tag-purple">React</span>
+                                    <span class="project-tag project-tag-purple">API</span>
+                                    <span class="project-tag project-tag-purple">Tailwind</span>
+                                    <span class="project-tag project-tag-purple">AI</span>
+                                </div>
+                                <a href="https://github.com" target="_blank" class="project-link project-link-purple">
+                                    GitHub에서 보기
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="fade-in card-hover group" style="animation-delay: 0.2s">
+                        <div class="project-card">
+                            <div class="project-visual project-visual-pink">
+                                <div class="project-overlay">
+                                    <svg class="project-overlay-svg" fill="currentColor" viewBox="0 0 100 100">
+                                        <circle cx="30" cy="50" r="20" opacity="0.3" />
+                                        <circle cx="70" cy="40" r="18" opacity="0.2" />
+                                        <circle cx="50" cy="80" r="15" opacity="0.25" />
+                                    </svg>
+                                </div>
+                                <div class="project-emoji">📱</div>
+                            </div>
+                            <div class="project-content">
+                                <h3 class="project-title">할일 관리 앱</h3>
+                                <p class="project-description">
+                                    localStorage를 활용한 투두 리스트 애플리케이션입니다.
+                                    부드러운 애니메이션과 직관적인 UI로 사용성이 뛰어나며,
+                                    모바일 환경에서도 완벽하게 작동합니다.
+                                </p>
+                                <div class="project-tag-list">
+                                    <span class="project-tag project-tag-pink">JavaScript</span>
+                                    <span class="project-tag project-tag-pink">CSS</span>
+                                    <span class="project-tag project-tag-pink">LocalStorage</span>
+                                    <span class="project-tag project-tag-pink">Responsive</span>
+                                </div>
+                                <a href="https://github.com" target="_blank" class="project-link project-link-pink">
+                                    GitHub에서 보기
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-block contact-section">
+        <div class="site-container">
+            <div class="section-stack">
+                <div class="fade-in contact-intro">
+                    <h2 class="section-title">Let's Connect</h2>
+                    <div class="section-line centered"></div>
+                    <p class="contact-intro-copy">
+                        새로운 프로젝트와 협업 기회를 항상 환영합니다.
+                        언제든 연락해주세요!
+                    </p>
+                </div>
+
+                <div class="contact-grid">
+                    <!-- Email Card -->
+                    <div class="fade-in card-hover">
+                        <div class="contact-card">
+                            <div class="contact-icon contact-icon-blue">
+                                <svg class="contact-icon-svg contact-icon-svg-blue" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <h3 class="contact-card-title">Email</h3>
+                            <a href="mailto:your.email@example.com" class="contact-link contact-link-blue">
+                                your.email@example.com
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- GitHub Card -->
+                    <div class="fade-in card-hover" style="animation-delay: 0.1s">
+                        <div class="contact-card">
+                            <div class="contact-icon contact-icon-purple">
+                                <svg class="contact-icon-svg contact-icon-svg-purple" fill="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v 3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                                </svg>
+                            </div>
+                            <h3 class="contact-card-title">GitHub</h3>
+                            <a href="https://github.com/yourprofile" target="_blank"
+                                class="contact-link contact-link-purple">
+                                github.com/yourprofile
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- LinkedIn Card -->
+                    <div class="fade-in card-hover" style="animation-delay: 0.2s">
+                        <div class="contact-card">
+                            <div class="contact-icon contact-icon-pink">
+                                <svg class="contact-icon-svg contact-icon-svg-pink" fill="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path
+                                        d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z" />
+                                </svg>
+                            </div>
+                            <h3 class="contact-card-title">LinkedIn</h3>
+                            <a href="https://linkedin.com/in/yourprofile" target="_blank"
+                                class="contact-link contact-link-pink">
+                                linkedin.com/in/yourprofile
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CTA Section -->
+                <div class="fade-in cta-area">
+                    <a href="mailto:your.email@example.com" class="cta-button">
+                        지금 이메일 보내기
+                        <svg class="button-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+                            </path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="page-footer">
+        <div class="site-container footer-content">
+            <p class="footer-copy">
+                © 2024 Kim Ji-young. All rights reserved.
+            </p>
+            <p class="footer-meta">
+                Made with <span class="footer-heart">❤</span> using HTML, Tailwind CSS & Vanilla JavaScript
+            </p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>
