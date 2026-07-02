@@ -2348,3 +2348,19 @@ input:focus-visible {
     background-size: cover;
     background-position: center;
 }
+
+.project-emoji4 {
+    width: 100%;
+    height: 100%;
+    background-image: url(/imgs/aicgpj.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.project-emoji5 {
+    width: 100%;
+    height: 100%;
+    background-image: url(/imgs/isglpj.png);
+    background-size: cover;
+    background-position: center;
+}
