@@ -68,10 +68,24 @@ function setupMobileMenu() {
     const menuLinks = mobileMenu.querySelectorAll("a");
     menuLinks.forEach((link) => {
       link.addEventListener("click", function () {
+        // 메뉴 닫기 애니메이션 시작
         mobileMenu.classList.add("hidden");
         const icon = mobileMenuBtn.querySelector("svg");
         icon.style.transform = "rotate(0deg)";
       });
+    });
+
+    // Close menu when clicking outside
+    document.addEventListener("click", function (e) {
+      if (
+        !mobileMenu.classList.contains("hidden") &&
+        !mobileMenuBtn.contains(e.target) &&
+        !mobileMenu.contains(e.target)
+      ) {
+        mobileMenu.classList.add("hidden");
+        const icon = mobileMenuBtn.querySelector("svg");
+        icon.style.transform = "rotate(0deg)";
+      }
     });
   }
 }
@@ -122,6 +136,16 @@ function scrollToSection(targetElement, duration = 700) {
   activeScrollAnimation = window.requestAnimationFrame(step);
 }
 
+function updateActiveNavLink(targetId) {
+  const navLinks = document.querySelectorAll('nav a[href^="#"]');
+  navLinks.forEach((link) => {
+    link.classList.remove("text-blue-600", "font-semibold");
+    if (link.getAttribute("href") === targetId) {
+      link.classList.add("text-blue-600", "font-semibold");
+    }
+  });
+}
+
 function setupSmoothScroll() {
   const navLinks = document.querySelectorAll('a[href^="#"]');
 
@@ -132,6 +156,8 @@ function setupSmoothScroll() {
       const targetElement = document.querySelector(targetId);
 
       if (targetElement) {
+        // 링크 클릭 시 즉시 활성화 상태 표시
+        updateActiveNavLink(targetId);
         scrollToSection(targetElement);
       }
     });
@@ -207,26 +233,26 @@ function setupParallaxEffect() {
 window.addEventListener(
   "scroll",
   function () {
-    const sections = document.querySelectorAll("section");
-    const navLinks = document.querySelectorAll('nav a[href^="#"]');
-
+    const sections = document.querySelectorAll(
+      "section#about, section#skills, section#projects, section#contact",
+    );
     let currentSection = "";
 
     sections.forEach((section) => {
       const sectionTop = section.offsetTop;
       const sectionHeight = section.offsetHeight;
+      const sectionBottom = sectionTop + sectionHeight;
+      const screenMiddle = window.scrollY + window.innerHeight / 2;
 
-      if (scrollY >= sectionTop - 200) {
+      // 화면 중앙이 섹션 안에 있을 때 활성화 (hero 섹션 제외)
+      if (screenMiddle >= sectionTop && screenMiddle < sectionBottom) {
         currentSection = section.getAttribute("id");
       }
     });
 
-    navLinks.forEach((link) => {
-      link.classList.remove("text-blue-600", "font-semibold");
-      if (link.getAttribute("href") === `#${currentSection}`) {
-        link.classList.add("text-blue-600", "font-semibold");
-      }
-    });
+    if (currentSection) {
+      updateActiveNavLink(`#${currentSection}`);
+    }
   },
   { passive: true },
 );
