@@ -1,3 +1,5 @@
+페이지 미리보기 https://minsuncha41.github.io/pptt/
+
 # 🎨 AI-Powered Frontend Developer Portfolio
 
 ## 📋 개요
